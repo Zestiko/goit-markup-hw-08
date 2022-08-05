@@ -1,0 +1,56 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+.benefits__item {
+    width: 270px;
+    &:before {
+        display: block;
+        content: ""; 
+        height: 120px;
+        background-color: #F5F4FA;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    
+        margin-bottom: 30px;
+    }
+}
+
+.benefits__titel {
+    margin-bottom: 10px;
+    color: var(--main-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+}
+.benefits__article {
+    color: var(--secondary-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;    
+        letter-spacing: 0.03em;
+}
+
+.icon-antenna::before {
+    background-image: url('../images/icon/antenna.png');
+}
+
+.icon-clock::before {
+    background-image: url('../images/icon/clock.png');
+}
+
+.icon-diagram::before {
+    background-image: url('../images/icon/diagram.png');
+}
+
+.icon-astrounaut::before {
+    background-image: url('../images/icon/astronaut.png');
+}
