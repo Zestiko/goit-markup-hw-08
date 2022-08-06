@@ -17,30 +17,44 @@
        <div class="container">
             <nav class="navigation" >
                 <a class="logo" href="/"><span class="logo--color">Web</span>Studio</a>
-                <ul  class="site-navigation">
-                    <li class="site-navigation__item ">
-                        <div class="current-session">
-                            <a class="site-navigation__link current-session--link" href="./index.html">Студия</a>
-                        </div>    
-                    </li>
-                    <li class="site-navigation__item"><a class="site-navigation__link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
-                </ul>
-                <ul class="auth-navigation">
-                    <li class="auth-navigation__item">
-                        <a class="auth-navigation__link" href="mailto:info@devstudio.com">
+                <button class="mobile-button " type="button" data-menu-button
+                aria-expanded="false"
+                aria-controls="menu-container">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="mobile-button__icon-open" href="./images/icons.svg#burger-menu"></use>
+                </svg>
+      
+                <svg class="cross-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="mobile-button__icon-close" href="./images/icons.svg#cross"></use> 
+                </svg>
+                </button>
+
+                <div class="menu-container" data-menu id="menu-container">
+                    <ul  class="site-navigation">
+                        <li class="site-navigation__item ">
+                            <div class="current-session">
+                                <a class="site-navigation__link current-session--link" href="./index.html">Студия</a>
+                            </div>    
+                        </li>
+                        <li class="site-navigation__item"><a class="site-navigation__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-navigation">
+                        <li class="auth-navigation__item">
+                            <a class="auth-navigation__link" href="mailto:info@devstudio.com">
+                                <svg class="contact-icon" wght="16px" height="16px">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="auth-navigation__item">
+                            <a class="auth-navigation__link" href="tel:+380961111111">
                             <svg class="contact-icon" wght="16px" height="16px">
-                                <use href="./images/icons.svg#envelope"></use>
+                                <use href="./images/icons.svg#smartphone"></use>
                             </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="auth-navigation__item">
-                        <a class="auth-navigation__link" href="tel:+380961111111">
-                        <svg class="contact-icon" wght="16px" height="16px">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-                </ul>
+                            +38 096 111 11 11</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

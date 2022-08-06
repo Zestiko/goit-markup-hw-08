@@ -1,25 +1,115 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    @media screen and (max-width:768px){
+      &{justify-content: space-between;}
+   }
+}
+
+
+.mobile-button{
+    display: inline-flex;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 990;
+ 
+   @media  screen and (min-width:768px) {
+      display: none;
+   }
+   
+ 
+  
+ }
+ .mobile-button:hover .mobile-button__icon-open{
+    fill: var(--accent-text-color);
+ }
+ .mobile-button:hover .mobile-button__icon-close{
+    fill: var(--accent-text-color);
+ }
+  .mobile-button__icon-close {
+     display: none;
+  }
+ .mobile-button.is-open .mobile-button__icon-close{
+    display: block;
+ }
+ .mobile-button.is-open .mobile-button__icon-open{
+    display: none;
+ }
+ .cross-icon{
+    position: fixed;
+    top:10px;
+    right: 15px;
+ }
+
+ .menu-container{
+   
+    background-color:#fff ;
+    padding: 48px 40px;
+    text-align: center;
+    
+    
+ 
+ @media screen and (max-width:767px) {
+    display: none;
+   
+    position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw;
+       height: 100vh;
+      
+       z-index: 900;
+ 
+       &.is-open {
+             display: block;
+          }
+ }
+ }
 .site-navigation {
     display: flex;
-    margin-left: 95px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (max-width:768px){
+        margin-bottom: 306px;
+        margin-left: 0;
+        }
+ 
+   
+    @media screen and (min-width:768px){
+       flex-direction: row;
+       gap: 50px;
+       margin-left: 88px;
+       margin-bottom: 0;
+    }
+    @media screen and (min-width:1200px){
+    margin-left:93px;
+    }
       
 }
 
 
 
 
-.site-navigation__item:not(:last-child){
-    margin-right: 50px;
-}
+// .site-navigation__item:not(:last-child){
+//     margin-right: 50px;
+// }
 
 .site-navigation__link {
+    
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     
 
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 40px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         
@@ -32,6 +122,13 @@
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
+        @media screen and (min-width:768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.14;
+         }
+        
 }
 
 
