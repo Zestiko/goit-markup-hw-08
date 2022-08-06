@@ -1,10 +1,12 @@
 .team {
     background-color: #F5F4FA;
     background-position: center;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     text-align: center;
-    
+    &__thumb {
+        width: 100%;
+    }
 }
 
 .team__title {
@@ -19,12 +21,18 @@
 }
 
 .team-persons{
+    justify-content: center;
+text-align: center;
     // display: flex;
     // justify-content: space-between;
+    
 }
 
 .team-persons__item  {
-
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
