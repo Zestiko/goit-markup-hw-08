@@ -17,11 +17,16 @@
     border: none;
     cursor: pointer;
     z-index: 990;
+    
  
    @media  screen and (min-width:768px) {
       display: none;
    }
    
+   &__icon-close{
+      width: 40px;
+      height: 40px;
+   }
  
   
  }
@@ -42,9 +47,15 @@
  }
  .close-burger{
     position: fixed;
-    top:10px;
-    right: 15px;
+    top: 20px;
+    right: 25px;
  }
+ .open-burger {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+ }
+
 
  .menu-container{
    
