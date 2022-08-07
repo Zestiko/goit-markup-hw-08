@@ -9,6 +9,8 @@ $hero-image-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     @media  screen and (max-width:576px) {
         &{background-image: $hero-image-gradient, url('../images/hero-bg/mobile-img1x.jpg');}
@@ -86,7 +88,7 @@ $hero-image-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
     cursor: pointer;
 }
 
-.hero--container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+// .hero--container {
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+// }
