@@ -101,7 +101,7 @@
     align-items: flex-start;
 
     @media screen and (max-width:768px){
-        margin-bottom: 306px;
+      //   margin-bottom: 306px;
         margin-left: 0;
         }
  
@@ -166,6 +166,10 @@
 
     background: #2196F3;
     border-radius: 2px;
+    @media screen and (max-width:768px){
+      display: none;
+     }
+
 }
 .current-session--link {
     color:#2196F3
@@ -290,6 +294,6 @@
        padding-right: 10px;
        text-decoration: none;
        color:#2196F3;
-       font-size: 24px; 
+       font-size: 18px; 
     }
  
