@@ -94,8 +94,14 @@
 
 /* Chekbox */
 .form-field--checkbox {
+    @media screen and (min-width:1199px) {
+        padding-left: 13px
+        
+     }
+    
     display: flex;
-    padding-left: 13px
+    // padding-left: 13px
+    
 }
 
 .form-field__checkbox-input {
@@ -107,6 +113,7 @@
 
 
 .form-field__checkbox-control {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,6 +139,10 @@
 
 
 .form-field__checkbox-label {
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        
+     }
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

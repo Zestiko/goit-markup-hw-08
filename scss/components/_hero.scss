@@ -1,6 +1,7 @@
+$hero-image-gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 .hero {
     max-width: 1600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-image: $hero-image-gradient, url(../images/hero-bg/hero-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,11 +10,42 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media  screen and (max-width:576px) {
+        &{background-image: $hero-image-gradient, url('../images/hero-bg/mobile-img1x.jpg');}
+        }
+        @media not all,
+        screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (max-width: 576px) and (min-resolution: 192dpi),
+        screen and (max-width: 576px) and (min-resolution: 2dppx){
+              &{background-image: $hero-image-gradient, url('../images/hero-bg/mobile-img@2x.jpg');}
+        }
+        
+        @media screen and (min-width:576px){
+              &{background-image: $hero-image-gradient, url('../images/hero-bg/tablet-img1x.jpg');}
+        }
+        @media not all,
+        screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 576px) and (min-resolution: 192dpi),
+        screen and (min-width: 576px) and (min-resolution: 2dppx){
+              &{background-image: $hero-image-gradient, url('../images/hero-bg/tablet-img@2x.jpg');}
+        }
+        
+        @media screen and (min-width:1200px){
+              &{padding-top: 200px;
+              padding-bottom: 200px;
+        background-image: $hero-image-gradient, url('../images/hero-bg/dekstop-img1x.jpg');}
+        }
+        @media not all,
+        screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (min-resolution: 192dpi),
+        screen and (min-width: 1200px) and (min-resolution: 2dppx){
+              &{background-image: $hero-image-gradient, url('../images/hero-bg/dekstop-img@2x.jpg');}    
     
+}
 }
 .hero__title  {
     display: block;
-    // width: 696px;
+    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -27,6 +59,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.61;
+        width: 360px;
+  }
 }
 
 .hero-button {
